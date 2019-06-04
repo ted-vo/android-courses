@@ -62,8 +62,6 @@ They handle communication between Android OS and applications.
 
 - A broadcast receiver is implemented as a subclass of BroadcastReceiver class and each message is broadcaster as an Intent object.
 
-
-
 ``` Java
 # Java
 public class MyReceiver extends BroadcastReceiver {
