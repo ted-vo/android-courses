@@ -1,3 +1,5 @@
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+
 # Services
 
 > A service is a component that runs in the background to perform long-running operations without needing to interact with the user and it works even if application is destroyed. A service can essentially take two states.
@@ -10,6 +12,8 @@
 ![service-lifecycle](../images/services-lifecycle.jpg "Activity lifecycle")
 
 <P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 ## Service Lifecycle
 
@@ -40,6 +44,8 @@ Here is a summary of the Service Lifecycle:
 > The system calls this method when the service is no longer used and is being destroyed. Your service should implement this to clean up any resources such as threads, registered listeners, receivers, etc.
 
 <P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 ### Code
 

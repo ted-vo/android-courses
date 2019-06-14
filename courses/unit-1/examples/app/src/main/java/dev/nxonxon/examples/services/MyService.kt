@@ -2,8 +2,10 @@ package dev.nxonxon.examples.services
 
 import android.app.Service
 import android.content.Intent
+import android.os.Binder
 import android.os.IBinder
 import android.util.Log
+import java.util.*
 
 class MyService : Service() {
 
@@ -11,7 +13,11 @@ class MyService : Service() {
     var mStartMode: Int = START_STICKY
 
     // interface for clients that bind
-    var mBinder: IBinder? = null
+    private var mBinder: IBinder = LocalBinder()
+    private val mGenerator = Random()
+
+    val randomNumber: Int
+        get() = mGenerator.nextInt(100)
 
     // indicates whether onRebind should be used
     var mAllowRebind: Boolean = false
@@ -49,5 +55,13 @@ class MyService : Service() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d("### dev", "My service destroyed")
+    }
+
+    inner class LocalBinder : Binder() {
+        fun getService(): MyService = this@MyService
+    }
+
+    companion object {
+        val TAG: String = "###${MyService::class.java.simpleName}"
     }
 }

@@ -30,13 +30,13 @@ class ForegroundService : Service() {
     override fun onCreate() {
         super.onCreate()
         mReceiver = MyReceiver()
-        Log.d("### dev", "Foreground services onCreate")
+        Log.d(TAG, "Foreground services onCreate")
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         when (intent?.action) {
             AppConstants.STARTFOREGROUND_ACTION -> {
-                Log.d("### dev", "Received start foreground service intent ");
+                Log.d(TAG, "Received start foreground service intent ");
 
                 val screenStateFilter = IntentFilter()
                 screenStateFilter.addAction(Intent.ACTION_SCREEN_ON)
@@ -76,7 +76,7 @@ class ForegroundService : Service() {
                 startForeground(101, notificationCompat)
             }
             AppConstants.STOPFOREGROUND_ACTION -> {
-                Log.d("### dev", "Received stop foreground service intent")
+                Log.d(TAG, "Received stop foreground service intent")
             }
         }
         return START_STICKY
@@ -85,6 +85,10 @@ class ForegroundService : Service() {
     override fun onDestroy() {
         super.onDestroy()
         unregisterReceiver(mReceiver)
-        Log.d("### dev", "Foreground services onDestroy")
+        Log.d(TAG, "Foreground services onDestroy")
+    }
+
+    companion object {
+        val TAG: String = "###${ForegroundService::class.java.simpleName}"
     }
 }

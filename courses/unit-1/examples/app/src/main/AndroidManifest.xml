@@ -31,6 +31,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".TestDBActivity"/>
+
+        <provider android:authorities="dev.nxonxon.examples.database.StudentsContentProvider"
+                  android:name=".database.StudentsContentProvider"/>
     </application>
 
 </manifest>
