@@ -1,12 +1,14 @@
+![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+
 # Android Components
 
 ## Activities
 
+Original docs: [Android Developer Activity Docs](https://developer.android.com/reference/kotlin/android/app/Activity "Activity")
+
 > They dictate the UI and handle the user interaction to the smart phone screen.
 
-- Một Activity đại diện cho một màn hình giao diện người dùng và nó dùng để tương tác thực hiện làm một cái gì đó như là hiển thị màn hình chụp ảnh, danh sách danh bạ, lịch, ghi chú, bản đồ,...
-
-- Mỗi Activity hoạt động giống như là một cửa sổ (nơi sẽ hiển thị giao diện người dùng). Các cửa sổ này thường sẽ lấp đầy cả màn hình hoặc nhở hơn màn hình và nổi trên một cửa sổ khác.
+- An activity represents a single screen with a user interface,in-short Activity performs actions on the screen. For example, an email application might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails. If an application has more than one activity, then one of them should be marked as the activity that is presented when the application is launched.
 
 ``` Java
 # Java
@@ -20,13 +22,11 @@ class MainActivity : Activity {}
 
 ## Services
 
-<!--
-They handle background processing associated with an application.
--->
+Original docs: [Android Developer Service Docs](https://developer.android.com/reference/kotlin/android/app/Service "Services")
 
-> Là đối tượng điều khiển và xử lý ngầm của một ứng dụng.
+> They handle background processing associated with an application.
 
-- Service là một thành phần chạy ở background để xử lý những công việc dài hạn như: phát một bài nhạc ở background trong khi người dùng đang sử dụng một ứng dụng khác, hoặc có thể là lấy dữ liệu thông qua mạng internet mà không tạm hoãn các hoạt động tương tác hiện tại của người dùng trên Activity.
+- A service is a component that runs in the background to perform long-running operations. For example, a service might play music in the background while the user is in a different application, or it might fetch data over the network without blocking user interaction with an activity.
 
 ``` Java
 # Java
@@ -37,15 +37,16 @@ public class MyService extends Service {}
 # Kotlin
 class MyService : Service {}
 ```
+
 <P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 ## Broadcast Receivers
 
-<!-- 
-They handle communication between Android OS and applications.
- -->
+Original docs: [Android Developer BroadcastReceiver Docs](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html "BroadcastReceiver")
 
-> Là đối tượng quản lý giao tiếp qua lại giữa hệ điều hành Android và ứng dụng.
+> They handle communication between Android OS and applications.
 
 - Broadcast Receivers simply respond to broadcast messages from other applications or from the system. For example, applications can also initiate broadcasts to let other applications know that some data has been downloaded to the device and is available for them to use, so this is broadcast receiver who will intercept this communication and will initiate appropriate action.
 
@@ -68,7 +69,11 @@ class MyReceiver : BroadcastReceiver {
 
 <P style="page-break-before: always">
 
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+
 ## Content Providers
+
+Original docs: [Android Developer Content-Provider Docs](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html "Content-Provider")
 
 > They handle data and database management issues.
 

@@ -1,4 +1,8 @@
+![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+
 # Content Providers
+
+Original docs: [Android Developer Docs](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html "BroadcastReceiver")
 
 > A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. A content provider can use different ways to store its data and the data can be stored in a database, in files, or even over a network.
 
@@ -17,6 +21,8 @@ public class MyApplication extends ContentProvider {}
 
 <P style="page-break-before: always">
 
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+
 ## Content URIs
 
 To query a content provider, you specify the query string in the form of a URI which has following format
@@ -33,6 +39,8 @@ To query a content provider, you specify the query string in the form of a URI w
 | **id** | This specifies the specific record requested. For example, if you are looking for contact number 5 in the Contacts content provider then URI would look like this content://contacts/people/5. |
 
 <P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 ## Create Content Provider
 

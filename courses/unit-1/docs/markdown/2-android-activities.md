@@ -1,4 +1,8 @@
+![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+
 # Activities
+
+Original docs: [Android Developer Docs](https://developer.android.com/reference/kotlin/android/app/Activity "Docs")
 
 > The Activity class is a crucial component of an Android app, and the way activities are launched and put together is a fundamental part of the platform's application model. Unlike programming paradigms in which apps are launched with a main() method, the Android system initiates code in an Activity instance by invoking specific callback methods that correspond to specific stages of its lifecycle.
 
@@ -8,7 +12,16 @@ void main() {
 }
 ```
 
-- With C, C++ or Java programming language then we must have seen that your program starts from **main()** function. Very similar way, Android system initiates its program with in an Activity starting with a call on **onCreate()** callback method. There is a sequence of callback methods that start up an activity and a sequence of callback methods that tear down an activity as shown in the below Activity life cycle diagram.
+An activity is a single, focused thing that the user can do. Almost all activities interact with the user, so the Activity class takes care of creating a window for you in which you can place your UI with [**setContentView(View)**](https://developer.android.com/reference/kotlin/android/app/Activity.html#setContentView(android.view.View)). While activities are often presented to the user as full-screen windows, they can also be used in other ways: as floating windows (via a theme with [**R.attr.windowIsFloating**](https://developer.android.com/reference/kotlin/android/R.attr.html#windowIsFloating) set), [**Multi-Window mode**](https://developer.android.com/guide/topics/ui/multi-window) or embedded into other windows. There are two methods almost all subclasses of Activity will implement:
+
+- [**onCreate(Bundle)**](https://developer.android.com/reference/kotlin/android/app/Activity.html#onCreate(android.os.Bundle)) is where you initialize your activity. Most importantly, here you will usually call [**setContentView(int)**](https://developer.android.com/reference/kotlin/android/app/Activity.html#setContentView(int)) with a layout resource defining your UI, and using [**findViewById(int)**](https://developer.android.com/reference/android/app/Activity.html#findViewById(int)) to retrieve the widgets in that UI that you need to interact with programmatically.
+- [**onPause()**](https://developer.android.com/reference/kotlin/android/app/Activity.html#onPause()) is where you deal with the user pausing active interaction with the activity. Any changes made by the user should at this point be committed (usually to the [**ContentProvider**](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html) holding the data). In this state the activity is still visible on screen.
+
+To be of use with [**Context.startActivity()**](https://developer.android.com/reference/android/content/Context.html#startActivity(android.content.Intent)), all activity classes must have a corresponding [**< activity >**](https://developer.android.com/reference/android/R.styleable.html#AndroidManifestActivity) declaration in their package's **AndroidManifest.xml**.
+
+<P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 ## Activity Lifecycle
 
@@ -23,6 +36,10 @@ void main() {
 | 5  | onStop()    | This callback is called when the activity is no longer visible. |
 | 6  | onDestroy() | This callback is called before the activity is destroyed by the system. |
 | 7  | onRestart() | This callback is called when the activity restarts after stopping it. |
+
+<P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 Here is a summary of the Activity Lifecycle:
 
@@ -67,6 +84,10 @@ override fun onStart() {
 }
 ```
 
+<P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+
 ### onResume()
 
 > Called when the activity will start interacting with the user. At this point your activity is at the top of the activity stack, with user input going to it. Always followed by onPause().
@@ -108,6 +129,10 @@ override fun onPause() {
   //Write your code here
 }
 ```
+
+<P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 ### onStop()
 

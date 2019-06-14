@@ -1,4 +1,8 @@
+![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+
 # Broadcast Receivers
+
+Original docs: [Android Developer Service Docs](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html "BroadcastReceiver")
 
 > Broadcast Receivers simply respond to broadcast messages from other applications or from the system itself. These messages are sometime called events or intents. For example, applications can also initiate broadcasts to let other applications know that some data has been downloaded to the device and is available for them to use, so this is broadcast receiver who will intercept this communication and will initiate appropriate action.
 
@@ -32,6 +36,8 @@ class MyReceiver L BroadcastReceiver {
 
 <P style="page-break-before: always">
 
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+
 ## Registering Broadcast Receiver
 
 An application listens for specific broadcast intents by registering a broadcast receiver in AndroidManifest.xml file. Consider we are going to register MyReceiver for system generated event ACTION_BOOT_COMPLETED which is fired by the system once the Android system has completed the boot process.
@@ -55,9 +61,9 @@ There are several system generated events defined as final static fields in the 
 | 9 | **android.intent.action.REBOOT** | Have the device reboot. |
 |...| .................. | ....................... |
 
-More action documents [Android Develop Docs](https://developer.android.com/reference/android/content/Intent#constants_2 "Docs").
-
 <P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 ## Broadcasting Custom Intents
 

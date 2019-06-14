@@ -1,6 +1,8 @@
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
 
 # Services
+
+Original docs: [Android Developer Service Docs](https://developer.android.com/reference/kotlin/android/app/Service "Service")
 
 > A service is a component that runs in the background to perform long-running operations without needing to interact with the user and it works even if application is destroyed. A service can essentially take two states.
 
@@ -8,6 +10,10 @@
 |----|---------|-------------|
 | 1 | **Started** | A service is started when an application component, such as an activity, starts it by calling startService(). Once started, a service can run in the background indefinitely, even if the component that started it is destroyed. |
 | 2 | **Bound** | A service is bound when an application component binds to it by calling bindService(). A bound service offers a client-server interface that allows components to interact with the service, send requests, get results, and even do so across processes with interprocess communication (IPC).
+
+<P style="page-break-before: always">
+
+![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
 
 ![service-lifecycle](../images/services-lifecycle.jpg "Activity lifecycle")
 
