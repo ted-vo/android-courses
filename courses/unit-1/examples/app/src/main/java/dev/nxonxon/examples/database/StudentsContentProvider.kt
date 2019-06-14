@@ -10,7 +10,6 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteQueryBuilder
 import android.net.Uri
 
-
 class StudentsContentProvider : ContentProvider() {
 
     private val contentUri = Uri.parse(URL)
@@ -30,7 +29,7 @@ class StudentsContentProvider : ContentProvider() {
             // Create a write able database which will trigger its creation if it doesn't already exist.
             db = DatabaseHelper(it, DATABASE_NAME, DATABASE_VERSION).writableDatabase
         }
-        return db == null
+        return db != null
     }
 
     override fun insert(uri: Uri, values: ContentValues?): Uri? {
@@ -154,7 +153,7 @@ class StudentsContentProvider : ContentProvider() {
     }
 
     companion object {
-        const val PROVIDER_NAME = "dev.nxonxon.Example.StudentsProvider"
+        const val PROVIDER_NAME = "dev.nxonxon.examples.database.StudentsContentProvider"
         const val URL: String = "content://$PROVIDER_NAME/students"
         const val ID = "_id"
         const val NAME = "name"
