@@ -1,4 +1,4 @@
-![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+![CorssTech](../../../assets/ic-cross-tech.png "CrossTech")
 
 # Content Providers
 
@@ -6,7 +6,7 @@ Original docs: [Android Developer Docs](https://developer.android.com/reference/
 
 > A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. A content provider can use different ways to store its data and the data can be stored in a database, in files, or even over a network.
 
-![content-provider](../images/content-provider.jpg "Content provider")
+![content-provider](../../../assets/content-provider.jpg "Content provider")
 
 > sometimes it is required to share data across applications. This is where content providers become very useful.
 
@@ -21,7 +21,7 @@ public class MyApplication extends ContentProvider {}
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ## Content URIs
 
@@ -40,7 +40,7 @@ To query a content provider, you specify the query string in the form of a URI w
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ## Create Content Provider
 
@@ -58,7 +58,7 @@ This involves number of simple steps to create your own content provider.
 
 Here is the list of methods which you need to override in Content Provider class to have your Content Provider working
 
-![sqlite](../images/sqlite.jpg "sqlite")
+![sqlite](../../../assets/sqlite.jpg "sqlite")
 
 - **onCreate()** This method is called when the provider is started.
 

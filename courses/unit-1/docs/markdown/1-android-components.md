@@ -1,4 +1,4 @@
-![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+![CorssTech](../../../assets/ic-cross-tech.png "CrossTech")
 
 # Android Components
 
@@ -40,7 +40,7 @@ class MyService : Service {}
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ## Broadcast Receivers
 
@@ -69,7 +69,7 @@ class MyReceiver : BroadcastReceiver {
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ## Content Providers
 

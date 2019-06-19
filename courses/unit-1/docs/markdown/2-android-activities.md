@@ -1,4 +1,4 @@
-![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+![CorssTech](../../../assets/ic-cross-tech.png "CrossTech")
 
 # Activities
 
@@ -17,15 +17,15 @@ An activity is a single, focused thing that the user can do. Almost all activiti
 - [**onCreate(Bundle)**](https://developer.android.com/reference/kotlin/android/app/Activity.html#onCreate(android.os.Bundle)) is where you initialize your activity. Most importantly, here you will usually call [**setContentView(int)**](https://developer.android.com/reference/kotlin/android/app/Activity.html#setContentView(int)) with a layout resource defining your UI, and using [**findViewById(int)**](https://developer.android.com/reference/android/app/Activity.html#findViewById(int)) to retrieve the widgets in that UI that you need to interact with programmatically.
 - [**onPause()**](https://developer.android.com/reference/kotlin/android/app/Activity.html#onPause()) is where you deal with the user pausing active interaction with the activity. Any changes made by the user should at this point be committed (usually to the [**ContentProvider**](https://developer.android.com/reference/kotlin/android/content/ContentProvider.html) holding the data). In this state the activity is still visible on screen.
 
-To be of use with [**Context.startActivity()**](https://developer.android.com/reference/android/content/Context.html#startActivity(android.content.Intent)), all activity classes must have a corresponding [**< activity >**](https://developer.android.com/reference/android/R.styleable.html#AndroidManifestActivity) declaration in their package's **AndroidManifest.xml**.
+To be of use with [**Context.startActivity()**](https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)), all activity classes must have a corresponding [**< activity >**](https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestActivity) declaration in their package's **AndroidManifest.xml**.
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ## Activity Lifecycle
 
-![activity-lifecycle](../images/activity-lifecycle.png "Activity lifecycle")
+![activity-lifecycle](../../../assets/activity-lifecycle.png "CrossTech")
 
 | No | Callback | Description |
 |----|----------|-------------|
@@ -39,7 +39,7 @@ To be of use with [**Context.startActivity()**](https://developer.android.com/re
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 Here is a summary of the Activity Lifecycle:
 
@@ -86,7 +86,7 @@ override fun onStart() {
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ### onResume()
 
@@ -132,7 +132,7 @@ override fun onPause() {
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ### onStop()
 

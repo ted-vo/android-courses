@@ -30,6 +30,7 @@ class TestDBActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor
         requestPermissionsSafely(s, 1)
     }
 
+
     override fun onCreateLoader(p0: Int, p1: Bundle?): Loader<Cursor> {
         val students = Uri.parse(StudentsContentProvider.URL)
         return CursorLoader(

@@ -1,4 +1,4 @@
-![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+![CorssTech](../../../assets/ic-cross-tech.png "CrossTech")
 
 # Broadcast Receivers
 
@@ -36,13 +36,13 @@ class MyReceiver L BroadcastReceiver {
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ## Registering Broadcast Receiver
 
 An application listens for specific broadcast intents by registering a broadcast receiver in AndroidManifest.xml file. Consider we are going to register MyReceiver for system generated event ACTION_BOOT_COMPLETED which is fired by the system once the Android system has completed the boot process.
 
-![service-lifecycle](../images/broadcast.jpg "Broadcast receiver")
+![service-lifecycle](../../../assets/broadcast.jpg "Broadcast receiver")
 
 Now whenever your Android device gets booted, it will be intercepted by BroadcastReceiver MyReceiver and implemented logic inside onReceive() will be executed.
 
@@ -63,7 +63,7 @@ There are several system generated events defined as final static fields in the 
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ## Broadcasting Custom Intents
 

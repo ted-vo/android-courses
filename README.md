@@ -1,6 +1,6 @@
 # ANDROID COURSE (BEGINNER)
 
-## Unit 1: Review Java & OOP + Application Components + Hello world Example
+## Unit 1: Review & OOP + Application Components + Hello world Example
 
 - Activities
 - Services
@@ -16,40 +16,74 @@
 - Accessing resource [Code, XML]
 - Example with each resource
 
-## Unit 3: Activities + Services Components
+## Unit 3: View, ViewGroup + XML Layout
 
-- Activity life circle
-- Service type
-- Life circle each service
-- Example Screen Splash of [Contact Application]
+- View = [TextView, EditText, Button, ImageView, View]
+- View Group = [LinearLayout, FrameLayout, AbsoluteLayout, ScrollView]
+- Event view handling
+- Toast
+- Example FirstApp in Kotlin
 
-## Unit 4: Broadcasts Receivers + Content Providers
+## Unit 4 - 5: View, ViewGroup + XML Layout
 
-- Create the broadcast receiver (default system intent)
-- Register broadcast receiver (default system intent)
-- Custom broadcast intent
-- Content Providers [SQLite, File]
+- View = [Checkbox, RadioButton, RadioGroup, RatingBar, Switch, SeekBar]
+- ViewGroup = [RelativeLayout, ConstraintLayout]
+- ListView
+- SnackBar
+- Example CheckList Activity
 
-## Unit 5: Fragments
+## Unit 6 - 7: View, ViewGroup + XML Layout
 
-- Fragment life circle
-- Example with Fragment: Activity Home of [Contact Application]
+- View = [SearchView, ProgressBar]
+- ViewGroup = [CoordinationLayout, NestedScrollView]
+- RecyclerView [Vertical, Horizontal, GridView]
+- Example Newfeeds Activity
 
-## Unit 6: Intents & Filters
+## Unit 8: Animation
+
+- Animation [XML, Code, MotionLayout]
+- Dialog
+- Popup
+- Example Mini game with animation application
+
+## Unit 9 - 10: Navigation + Fragment
+
+- DrawerLayout
+- AppBarLayout
+- ToolBarLayout
+- TabLayout
+- ViewPager
+- Fragment
+
+## Unit 11: Styles & Themes
+
+- Multi styles
+- Multi themes
+
+## Unit 12: Intents & Filters
 
 - Intent Object [Action, Data, Category, Extras, Flags]
 - Intent Type [Explicit Intents, Implicit Intents]
 - Intent Filters
+- Example with some Intent object, type, filter
 
-## Unit 7-8-9-10-11-12-13-14: UI [Layouts, Controls] + Event Handling + Data Binding
+## Unit 13: ViewModel + RoomDB + LiveData
 
-- View -> View Group
-- ListView, RecyclerView
-- Animations [xml, code]
-- Dialog, Popup
-- Toast, Notifications
+- ViewModelProviders
+- RoomDB
+- LiveData
+- Example Contact Application
 
-## Unit 15: Styles & Themes
+## Unit 14: Service + Firebase Cloud Message
+
+- Example Service listen music
+- Example Service + Firebase Cloud Messge
+
+## Unit 15: Broadcasts Receivers
+
+- Create the broadcast receiver (default system intent)
+- Register broadcast receiver (default system intent)
+- Custom broadcast intent
 
 ## Unit 16: Asynchronous in Android
 
@@ -58,7 +92,7 @@
 - Hander
 - Runnable
 
-## Unit 17: Networking
+## Unit 17: Networking + Firebase DB
 
 - Restful API
 - Fetch data from API + Download File  (Basic & Retrofit)

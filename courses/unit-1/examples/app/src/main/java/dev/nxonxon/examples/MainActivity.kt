@@ -72,9 +72,9 @@ class MainActivity : AppCompatActivity() {
 
         btnTestActivity.setOnClickListener {
             startActivity(Intent(this, TestDBActivity::class.java))
-            finish()
+            //finish()
         }
-    }
+}
 
     override fun onStart() {
         super.onStart()

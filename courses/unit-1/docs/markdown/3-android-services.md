@@ -1,4 +1,4 @@
-![CorssTech](../images/ic-cross-tech.png "Activity lifecycle")
+![CorssTech](../../../assets/ic-cross-tech.png "CrossTech")
 
 # Services
 
@@ -13,13 +13,13 @@ Original docs: [Android Developer Service Docs](https://developer.android.com/re
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
-![service-lifecycle](../images/services-lifecycle.jpg "Activity lifecycle")
+![service-lifecycle](../../../assets/services-lifecycle.jpg "CrossTech")
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ## Service Lifecycle
 
@@ -51,7 +51,7 @@ Here is a summary of the Service Lifecycle:
 
 <P style="page-break-before: always">
 
-![CorssTech](../images/cross-tech-logo.png "Activity lifecycle")
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
 ### Code
 

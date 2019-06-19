@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LearnAboutView</string>
+    <string name="checkedtextview">CheckedTextView</string>
+</resources>
