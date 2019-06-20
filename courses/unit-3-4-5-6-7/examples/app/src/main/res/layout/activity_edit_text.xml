@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".EditTextActivity">
+
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Plain text"/>
+
+        <EditText
+                android:id="@+id/editText2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" android:hint="Password"/>
+
+        <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberPassword" android:hint="Number password"/>
+
+        <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress" android:hint="Email"/>
+
+        <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" android:hint="Phone"/>
+
+        <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" android:hint="Postal address"/>
+
+        <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine" android:hint="Multiline text"/>
+
+        <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="time" android:hint="Time"/>
+
+        <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" android:hint="Date"/>
+
+        <EditText
+                android:id="@+id/editText10"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" android:hint="Number"/>
+
+        <EditText
+                android:id="@+id/editText11"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned" android:hint="Number singed"/>
+
+        <EditText
+                android:id="@+id/editText12"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" android:hint="Number decimal"/>
+
+        <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="AutoCompleteTextView"/>
+
+        <MultiAutoCompleteTextView
+                android:id="@+id/multiAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="MultiAutoCompleteTextView"/>
+
+        <CheckedTextView
+                android:id="@+id/checkedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CheckedTextView"
+                android:checked="false"
+                android:checkMark="@android:drawable/checkbox_on_background"/>
+    </LinearLayout>
+</ScrollView>

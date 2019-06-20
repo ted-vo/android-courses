@@ -8,28 +8,24 @@ Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/and
 
 ## FrameLayout
 
-Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout)
-
-## AbsoluteLayout
-
-Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout)
+Original docs: [FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout)
 
 ## RelativeLayout
 
-Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout)
+Original docs: [RelativeLayout](https://developer.android.com/reference/kotlin/android/widget/RelativeLayout)
 
 ## ConstraintLayout
 
-Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout)
+Original docs: [ConstraintLayout](https://developer.android.com/reference/kotlin/android/widget/ConstraintLayout)
 
 ## ScrollView
 
-Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout)
+Original docs: [ScrollView](https://developer.android.com/reference/kotlin/android/widget/ScrollView)
 
 ## NestedScrollView
 
-Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout)
+Original docs: [LinearLayout](https://developer.android.com/reference/android/support/v4/widget/NestedScrollView)
 
 ## CoordinationLayout
 
-Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout)
+Original docs: [CoordinationLayout](https://developer.android.com/reference/android/support/design/widget/CoordinatorLayout)

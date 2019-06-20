@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">LearnAboutView</string>
-    <string name="checkedtextview">CheckedTextView</string>
+    <string name="label_view">View</string>
+    <string name="label_text_view">TextView</string>
+    <string name="label_edit_text">EditText</string>
+    <string name="label_button">Button</string>
+    <string name="label_image_view">ImageView</string>
+    <string name="label_check_box">CheckBox</string>
+    <string name="label_radio_group">RadioGroup</string>
+    <string name="label_rating_bar">RatingBar</string>
+    <string name="label_switch">Switch</string>
+    <string name="label_seek_bar">SeekBar</string>
+    <string name="label_search_view">SearchView</string>
+    <string name="label_progress_bar">ProgressBar</string>
 </resources>
