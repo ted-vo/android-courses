@@ -30,7 +30,6 @@ class TestDBActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor
         requestPermissionsSafely(s, 1)
     }
 
-
     override fun onCreateLoader(p0: Int, p1: Bundle?): Loader<Cursor> {
         val students = Uri.parse(StudentsContentProvider.URL)
         return CursorLoader(
@@ -50,7 +49,7 @@ class TestDBActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor
             Log.i("Student name : ", p1.getString(p1.getColumnIndex("name")))
             Log.i("Student grade: ", p1.getString(p1.getColumnIndex("grade")))
         }
-        supportLoaderManager.destroyLoader(1)
+        LoaderManager.getInstance(this).destroyLoader(1)
     }
 
     override fun onLoaderReset(p0: Loader<Cursor>) {}
@@ -67,7 +66,7 @@ class TestDBActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor
 
     fun onClickRetrieveStudents(view: View) {
         // Retrieve student records
-        supportLoaderManager.initLoader(1, null, this)
+        LoaderManager.getInstance(this).initLoader(1, null, this)
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {

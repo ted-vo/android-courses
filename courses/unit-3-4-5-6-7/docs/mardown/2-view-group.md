@@ -2,30 +2,78 @@
 
 # ViewGroup
 
-## LinearLayout
+## LinearLayout - [Docs](https://developer.android.com/reference/kotlin/android/widget/LinearLayout)
 
-Original docs: [LinearLayout](https://developer.android.com/reference/kotlin/android/widget/LinearLayout)
+``` XML
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical|horizontal">
+</LinearLayout>
+```
 
-## FrameLayout
+## FrameLayout - [Docs](https://developer.android.com/reference/kotlin/android/widget/FrameLayout)
 
-Original docs: [FrameLayout](https://developer.android.com/reference/kotlin/android/widget/FrameLayout)
+``` XML
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+</FrameLayout>
+```
 
-## RelativeLayout
+## RelativeLayout - [Docs](https://developer.android.com/reference/kotlin/android/widget/RelativeLayout)
 
-Original docs: [RelativeLayout](https://developer.android.com/reference/kotlin/android/widget/RelativeLayout)
+``` XML
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+</RelativeLayout>
+```
 
-## ConstraintLayout
+<P style="page-break-before: always">
 
-Original docs: [ConstraintLayout](https://developer.android.com/reference/kotlin/android/widget/ConstraintLayout)
+![CorssTech](../../../assets/cross-tech-logo.png "CrossTech")
 
-## ScrollView
+## ConstraintLayout - [Docs](https://developer.android.com/reference/kotlin/android/widget/ConstraintLayout)
 
-Original docs: [ScrollView](https://developer.android.com/reference/kotlin/android/widget/ScrollView)
+``` XML
+<ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+</ConstraintLayout>
+```
 
-## NestedScrollView
+## ScrollView - [Docs](https://developer.android.com/reference/kotlin/android/widget/ScrollView)
 
-Original docs: [LinearLayout](https://developer.android.com/reference/android/support/v4/widget/NestedScrollView)
+``` XML
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+</ScrollView>
+```
 
-## CoordinationLayout
+## NestedScrollView - [Docs](https://developer.android.com/reference/android/support/v4/widget/NestedScrollView)
 
-Original docs: [CoordinationLayout](https://developer.android.com/reference/android/support/design/widget/CoordinatorLayout)
+``` XML
+<NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+</NestedScrollView>
+```
+
+## CoordinationLayout - [Docs](https://developer.android.com/reference/android/support/design/widget/CoordinatorLayout)
+
+
+``` XML
+<CoordinationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+</CoordinationLayout>
+```

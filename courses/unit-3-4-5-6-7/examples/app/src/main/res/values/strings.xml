@@ -12,4 +12,5 @@
     <string name="label_seek_bar">SeekBar</string>
     <string name="label_search_view">SearchView</string>
     <string name="label_progress_bar">ProgressBar</string>
+    <string name="label_list_view">ListView</string>
 </resources>

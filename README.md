@@ -28,7 +28,7 @@
 
 - View = [Checkbox, RadioButton, RadioGroup, RatingBar, Switch, SeekBar]
 - ViewGroup = [RelativeLayout, ConstraintLayout]
-- ListView
+- ListView + ExpandableListView
 - SnackBar
 - Example CheckList Activity
 

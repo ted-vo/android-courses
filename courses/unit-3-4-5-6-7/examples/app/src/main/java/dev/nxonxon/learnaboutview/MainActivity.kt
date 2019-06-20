@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import dev.nxonxon.learnaboutview.list.ListViewActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -58,6 +59,10 @@ class MainActivity : AppCompatActivity() {
 
     fun onProgressBarClicked(view: View) {
 
+    }
+
+    fun onListViewClicked(view: View) {
+        start(ListViewActivity::class.java)
     }
 
     private fun start(clazz: Class<*>) = startActivity(Intent(this, clazz))
