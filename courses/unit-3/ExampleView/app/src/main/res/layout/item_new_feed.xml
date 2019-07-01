@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/default_img_width"
+        android:layout_height="@dimen/default_img_height"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:hint="@string/hint_name"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAvatar"
+        app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+        app:layout_constraintTop_toTopOf="@+id/ivAvatar" />
+
+    <ImageButton
+        android:id="@+id/btnToolTip"
+        android:layout_width="@dimen/default_img_width"
+        android:layout_height="@dimen/default_img_height"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivAvatar" />
+
+    <ImageView
+        android:id="@+id/ivImageContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_image_content_height"
+        android:layout_marginTop="@dimen/default_margin"
+        android:src="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@+id/ivAvatar" />
+
+    <ImageButton
+        android:id="@+id/btnLike"
+        android:layout_width="@dimen/default_img_width"
+        android:layout_height="@dimen/default_img_height"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_like"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImageContent" />
+
+    <ImageButton
+        android:id="@+id/btnComment"
+        android:layout_width="@dimen/default_img_width"
+        android:layout_height="@dimen/default_img_height"
+        android:layout_marginStart="@dimen/default_margin"
+        android:background="@android:color/transparent"
+        android:rotation="-90"
+        android:src="@drawable/ic_comment"
+        app:layout_constraintStart_toEndOf="@+id/btnLike"
+        app:layout_constraintTop_toTopOf="@+id/btnLike" />
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="@dimen/default_img_width"
+        android:layout_height="@dimen/default_img_height"
+        android:layout_marginStart="@dimen/default_margin"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_send"
+        app:layout_constraintStart_toEndOf="@+id/btnComment"
+        app:layout_constraintTop_toTopOf="@+id/btnLike" />
+
+    <ImageButton
+        android:id="@+id/btnBookMark"
+        android:layout_width="@dimen/default_img_width"
+        android:layout_height="@dimen/default_img_height"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_bookmark"
+        app:layout_constraintEnd_toEndOf="@+id/btnToolTip"
+        app:layout_constraintTop_toTopOf="@+id/btnLike" />
+
+    <TextView
+        android:id="@+id/tvViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:hint="0 views"
+        android:textSize="@dimen/default_text_small"
+        app:layout_constraintStart_toStartOf="@+id/btnLike"
+        app:layout_constraintTop_toBottomOf="@+id/btnLike" />
+
+</android.support.constraint.ConstraintLayout>

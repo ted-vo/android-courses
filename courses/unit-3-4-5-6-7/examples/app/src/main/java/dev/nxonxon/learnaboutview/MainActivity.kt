@@ -21,9 +21,7 @@ class MainActivity : AppCompatActivity() {
         start(ViewActivity::class.java)
     }
 
-    fun onButtonClicked(view: View) {
-
-    }
+    fun onButtonClicked(view: View) {}
 
     fun onEditTextClicked(view: View) {
         start(EditTextActivity::class.java)

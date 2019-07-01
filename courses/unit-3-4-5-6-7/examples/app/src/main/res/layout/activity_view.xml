@@ -71,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ellipsize="marquee"
+
         android:singleLine="true"
         android:text="This a very longggggggggggggggggggggggggg textttttttttttt" />
 
