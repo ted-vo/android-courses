@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/btnCamera"
+        android:layout_width="@dimen/default_img_width"
+        android:layout_height="@dimen/default_img_height"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img_logo_instagram"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCamera"
+        app:layout_constraintEnd_toStartOf="@+id/btnSend"
+        app:layout_constraintStart_toEndOf="@+id/btnCamera"
+        app:layout_constraintTop_toTopOf="@+id/btnCamera" />
+
+    <ImageView
+        android:id="@+id/btnSend"
+        android:layout_width="@dimen/default_img_width"
+        android:layout_height="@dimen/default_img_height"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:src="@drawable/ic_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frmMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamera"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/botNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:itemIconSize="24dp"
+        app:itemTextColor="@android:color/black"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation" />
 </android.support.constraint.ConstraintLayout>

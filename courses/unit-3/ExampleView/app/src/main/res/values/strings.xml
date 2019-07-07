@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ExampleView</string>
     <string name="hint_name">Name</string>
+    <string name="label_home">Home</string>
+    <string name="label_search">Search</string>
+    <string name="label_favorite">Favorite</string>
+    <string name="label_new_post">New post</string>
+    <string name="label_user">User</string>
 </resources>

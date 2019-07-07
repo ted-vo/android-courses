@@ -1,4 +1,4 @@
-package dev.nxonxon.exampleview
+package dev.nxonxon.exampleview.listview
 
 data class Contact(
         val name: String,

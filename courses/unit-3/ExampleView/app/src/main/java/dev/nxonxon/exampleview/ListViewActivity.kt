@@ -5,16 +5,18 @@ import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.BaseAdapter
-import kotlinx.android.synthetic.main.activity_main.*
+import dev.nxonxon.exampleview.listview.Contact
+import dev.nxonxon.exampleview.listview.ContactAdapter
+import kotlinx.android.synthetic.main.activity_list_view.*
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class ListViewActivity : AppCompatActivity() {
 
     lateinit var itemsAdapter: ContactAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_list_view)
 
         initListView()
 
@@ -42,9 +44,12 @@ class MainActivity : AppCompatActivity() {
         repeat(10) {
             val name = random.nextInt()
             val phoneNumer = random.nextInt()
-            items.add(Contact(
+            items.add(
+                Contact(
                     name = "Name $name",
-                    phoneNumber = "PhoneNumber $phoneNumer"))
+                    phoneNumber = "PhoneNumber $phoneNumer"
+                )
+            )
         }
         return items
     }

@@ -1,4 +1,4 @@
-package dev.nxonxon.exampleview
+package dev.nxonxon.exampleview.listview
 
 import android.content.Context
 import android.view.LayoutInflater
