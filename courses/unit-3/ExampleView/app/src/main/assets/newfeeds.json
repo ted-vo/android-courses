@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "image_url": "https://images.pexels.com/photos/2422/sky-earth-galaxy-universe.jpg",
+    "user": {
+      "name": "Name A"
+    },
+    "view_count": 10,
+    "like": true,
+    "bookmark": false
+  },
+  {
+    "id": 2,
+    "image_url": "https://images.pexels.com/photos/1366913/pexels-photo-1366913.jpeg",
+    "user": {
+      "name": "Name A2"
+    },
+    "view_count": 5,
+    "like": true,
+    "bookmark": false
+  },
+  {
+    "id": 3,
+    "image_url": "https://images.pexels.com/photos/1366913/pexels-photo-1366913.jpeg",
+    "user": {
+      "name": "Name A3"
+    },
+    "view_count": 100,
+    "like": false,
+    "bookmark": false
+  },
+  {
+    "id": 4,
+    "image_url": "https://images.pexels.com/photos/1366630/pexels-photo-1366630.jpeg",
+    "user": {
+      "name": "Name A4"
+    },
+    "view_count": 15,
+    "like": true,
+    "bookmark": false
+  },
+  {
+    "id": 5,
+    "image_url": "https://images.pexels.com/photos/1366913/pexels-photo-1366913.jpeg",
+    "user": {
+      "name": "Name A5"
+    },
+    "view_count": 20,
+    "like": false,
+    "bookmark": false
+  },
+  {
+    "id": 6,
+    "image_url": "https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg",
+    "user": {
+      "name": "Name A6"
+    },
+    "view_count": 33,
+    "like": true,
+    "bookmark": false
+  },
+  {
+    "id": 7,
+    "image_url": "https://images.pexels.com/photos/1274260/pexels-photo-1274260.jpeg",
+    "user": {
+      "name": "Name A7"
+    },
+    "view_count": 40,
+    "like": true,
+    "bookmark": false
+  },
+  {
+    "id": 8,
+    "image_url": "https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg",
+    "user": {
+      "name": "Name A8"
+    },
+    "view_count": 70,
+    "like": true,
+    "bookmark": false
+  },
+  {
+    "id": 9,
+    "image_url": "https://images.pexels.com/photos/2422/sky-earth-galaxy-universe.jpg",
+    "user": {
+      "name": "Name A9"
+    },
+    "view_count": 80,
+    "like": true,
+    "bookmark": true
+  },
+  {
+    "id": 10,
+    "image_url": "https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg",
+    "user": {
+      "name": "Name A10"
+    },
+    "view_count": 30,
+    "like": true,
+    "bookmark": false
+  },
+  {
+    "id": 11,
+    "image_url": "https://images.pexels.com/photos/1212600/pexels-photo-1212600.jpeg",
+    "user": {
+      "name": "Name A11"
+    },
+    "view_count": 10,
+    "like": true,
+    "bookmark": true
+  },
+  {
+    "id": 12,
+    "image_url": "https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg",
+    "user": {
+      "name": "Name A12"
+    },
+    "view_count": 10,
+    "like": true,
+    "bookmark": false
+  },
+  {
+    "id": 13,
+    "image_url": "https://images.pexels.com/photos/719396/pexels-photo-719396.jpeg",
+    "user": {
+      "name": "Name A13"
+    },
+    "view_count": 19,
+    "like": true,
+    "bookmark": true
+  }
+]
